@@ -187,7 +187,8 @@ namespace ContactManager
         //First thing we wanna do when the form loads is to load and fetch the data
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            btnChange.Visible = false;
+            btnDelete.Visible = false;
             showContacts();
         }
 
@@ -209,6 +210,8 @@ namespace ContactManager
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            btnChange.Visible = true;
+            btnDelete.Visible = true;
             try
             {
                 c = cm.getContacts()[listView1.SelectedItems[0].Index];
@@ -224,7 +227,8 @@ namespace ContactManager
                 //this is just to prevent the program from crashing
                 //listview issue unrelated to the code logic
             }
-           
+
+            btnAdd.Visible = false;
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -400,6 +404,9 @@ namespace ContactManager
         {
             clear();
             listView1.SelectedItems.Clear();
+            btnAdd.Visible = true;
+            btnChange.Visible = false;
+            btnDelete.Visible = false;
         }
     }
 }

@@ -112,7 +112,7 @@
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(150, 317);
+            this.btnRefresh.Location = new System.Drawing.Point(150, 355);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(130, 32);
             this.btnRefresh.TabIndex = 19;
@@ -165,7 +165,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(150, 355);
+            this.btnAdd.Location = new System.Drawing.Point(150, 317);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(130, 32);
             this.btnAdd.TabIndex = 13;
